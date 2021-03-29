@@ -378,6 +378,17 @@
 		}
 	}
 
+	.leftpad{
+		width: 33%;
+		height: auto;
+		margin-right: 66%;
+		padding-left: 10px;
+		text-align: left;
+		border-left: 1px solid #ccc;
+		width: 33%;
+		display: block;
+	}
+
 /* List */
 
 	ul {
