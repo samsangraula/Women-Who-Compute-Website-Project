@@ -346,15 +346,19 @@ hr:after {
 
 /* Container */
 
-.whitespace {
-  white-space: normal;
-}
-
 .container {
   margin: 0 auto;
   max-width: 100%;
   width: 1400px;
 }
+
+.container-testimonial {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1400px;
+
+}
+
 .container2 {
   margin-left: 50%;
   margin-right: 10%;
@@ -365,16 +369,36 @@ hr:after {
   flex-direction: col;
   flex-wrap: wrap;
 }
-.card {
+
+/* .container-testimonial {
+  image {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+  }
+  text {
+    display: inline-block;
+    width: 46%;
+    @media (max-width: 620px) {
+      width: 100%;
+    }
+  }
+} */
+/* .card {
   margin-left: 30%;
   margin-right: 10%;
   border: 1px solid black;
-}
+  overflow: auto;
+  display: flex;
+} */
 
 .card {
+  margin-left:10%;
+  margin-right: 10%;
+  /* margin-bottom: 80%; */
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-width: 0;
   width: 1000px;
   word-wrap: break-word;
@@ -382,6 +406,10 @@ hr:after {
   background-clip: border-box;
   border: 4px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  overflow: auto;
+  display: flex;
+  float: left;
+  /* vertical-align: top; */
 }
 
 .card-body {
@@ -400,6 +428,23 @@ hr:after {
   width: 100%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-Collapsible {
+  margin-top: 20px;
+  width: auto;
+  height: 100px;
+  display: table;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-paragraphStyling {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  flex: 1 1 auto;
+  padding: 1.25rem;
 }
 
 .text-left {
@@ -421,6 +466,8 @@ hr:after {
 }
 
 @media screen and (max-width: 1680px) {
+
+
   .container {
     width: 1200px;
   }
@@ -453,6 +500,20 @@ hr:after {
 /* Row */
 
 .row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+.rowleft {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+.rowright {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -699,7 +760,9 @@ hr:after {
 .row.gtr-200.gtr-uniform > * {
   padding-top: 80px;
 }
-
+.rightpad{
+  padding-left: 20px;
+}
 @media screen and (max-width: 1680px) {
   .row {
     display: flex;
